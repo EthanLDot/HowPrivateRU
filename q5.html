@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Question 5</title>
+    <link href="style1.css" rel="stylesheet" type="text/css" />
+
+    <script src = "airtable.browser.js"></script>
+    <script src = "script.js"></script>
+  </head>
+  <body>
+    <div class="General"> 
+        <div class = "question">
+            <h1>
+                Which one of the following headphones do you own or plan to buy within six months?
+            </h1>
+        </div>
+        <div class = "response">
+          <form class = "answer" id = "answer">
+
+          </form>
+          <button class = "button" onClick = "readForm('5')">Next</button>
+        </div>
+    </div>
+    <script>
+        integrateData("Headphones");
+      </script>
+  </body>
+</html>

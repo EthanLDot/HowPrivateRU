@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Your Results</title>
+        <link href="style1.css" rel="stylesheet" type="text/css" />
+        <script src = "airtable.browser.js"></script>
+        <script src = "resultsScript.js"></script>
+    </head>
+    <body class = "fullResults">
+        <h1>Your Selections</h1>
+        <ul id = "selections">
+        </ul>
+        <h2>Stats:</h2>
+        <ul id = "stats">
+        </ul>
+        <h2>Problem Spots:</h2>
+        <ul id = "problems">
+            <li>Selections with an asterisk(*) at the end indicate the product is from a company with a problematic privacy history.</li>
+        </ul>
+        <button onclick="reset()">Take the quiz again!</button>
+        <script>
+            getResults();
+        </script>
+    </body>
+</html>

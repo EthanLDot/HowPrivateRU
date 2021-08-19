@@ -1,0 +1,145 @@
+body{
+    background-color: #FA8072;
+}
+
+.General{
+    color: 	#FFFFFF;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    font-size: 24px;
+    position: relative;
+    top: 100px;
+    animation: fadein 1s;
+    -moz-animation: fadein 1s;
+    -ms-animation: fadein 1s;
+    -o-animation: fadein 1s;
+    -webkit-animation: fadein 1s;    
+}
+
+/*credit for @keyframes goes to A.M.K./Peter Mortensen*/
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#welcome{
+
+    font-size: 48px;
+    font-weight: 1000;
+}
+
+#info{
+    font-size: 24px;
+    font-weight: 500;
+
+}
+#instructions{
+    font-weight: 250;
+}
+
+button{
+    background-color: #FFFFFF;
+    font-size: 24px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 4px;
+    padding: 10px 30px;
+    margin-top: 3vh;
+    transition-duration: .4s;
+}
+
+button:hover {
+    background-color: #4CAF50;
+  }
+
+.response{
+    display: block;
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100vh;
+}
+
+.choice{
+    display: block;
+    padding: 1vh;
+}
+
+
+.checkbox{
+    -webkit-appearance: none;
+	border: 5px solid #cacece;
+	padding: 20px;
+	border-radius: 5px;
+    vertical-align: middle;
+    margin: 5vh;
+    bottom: 1px;
+}
+
+.checkbox:hover{
+    background-color:#7db47f;
+    transition: 2s;
+}
+.checkbox:checked {
+	background-color: #09ff00;
+    transition: 1s;
+}
+
+.fullResults {
+    background-color: #35f2ff;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: 	#000000;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    animation: fadein 1s;
+    -moz-animation: fadein 1s;
+    -ms-animation: fadein 1s;
+    -o-animation: fadein 1s;
+    -webkit-animation: fadein 1s; 
+}
+
+.fullResults h1, h2 {
+    font-size: 48px;
+    text-align: center;
+}
+
+.fullResults h2 {
+    color: 	#ff0000;
+}
+
+.fullResults button {
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 5%;
+}
+
+ul{
+    display: table;
+    margin: 0 auto;
+    font-size: 24px;
+
+}
