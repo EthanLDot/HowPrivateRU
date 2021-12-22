@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Question 4</title>
+    <link href="style1.css" rel="stylesheet" type="text/css" />
+
+    <script src = "airtable.browser.js"></script>
+    <script src = "script.js"></script>
+  </head>
+  <body class = "bg-dark">
+    <nav class="navbar navbar-dark bg-dark">
+        <span class="navbar-brand mb-1 h1">How Private Are You?</span>
+    </nav>
+    <div class="content bg-dark pb-5">
+        <div class="container">
+            <div class = "row">
+                <div class="col-lg-8 text-white">
+                    <div class="row  bg-secondary text-left m-4 p-4">
+                        <h3>
+                            Which one of the following entertainment devices do you own or plan to buy within six months?
+                        </h3>
+                    </div>
+                    <div class="row bg-secondary justify-content-center m-4 p-4">
+                        <form class = "answer" id = "answer">
+                        </form>
+                        <div class="w-100"></div>
+                        <button class = "btn btn-success mt-2" onClick = "readForm('4')">Next</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <img src="img/gaming.jpg" alt="gaming" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        integrateData("Gaming");
+        integrateData("TV");
+    </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

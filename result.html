@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="style1.css" rel="stylesheet" type="text/css" />
+    
+    <title>Your Results</title>
+    <script src = "airtable.browser.js"></script>
+    <script src = "resultsScript.js"></script>
+  </head>
+  <body class = "bg-dark">
+    <nav class="navbar navbar-dark bg-dark">
+        <span class="navbar-brand mb-1 h1">How Private Are You?</span>
+    </nav>
+    <div class="content bg-dark text-white pb-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <h1>Your Selections</h1>
+            </div>
+            <div class="row justify-content-center m-3">Selections with an asterisk(*) at the end indicate the product is from a company with a problematic privacy history.</div>
+            <div class="row justify-content-center selections">
+            </div>
+            <div class="row justify-content-center m-3">
+                <h1>Stats:</h1>
+            </div>
+            <div class="row stats">
+            </div>
+            <div class="row justify-content-center m-3"> 
+                <h1>Problem Spots: </h1>
+            </div>
+            <div class="row justify-content-center">
+                <ul class = "list-group problems">
+                    <p class = "text-center">Selections with an asterisk(*) at the end indicate the product is from a company with a problematic privacy history.</li>
+                </ul>
+            </div>
+            <div class="row justify-content-center m-3">
+                <button class="btn-outline-success btn-lg m-5" onclick="reset()">Take the quiz again!</button>
+            </div>
+            <script>
+                getResults();
+            </script>
+    </div>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
